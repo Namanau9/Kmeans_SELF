@@ -33,11 +33,13 @@ This project is a Flask web application that performs **K-Means clustering** on 
 ## 🖼️ Screenshots
 
 ### **2D Scatter Plot**
+![plot_2d](https://github.com/user-attachments/assets/ddb1e775-4946-4880-a850-3ba9cd58d8de)
+
 
 
 
 ### **3D Scatter Plot (Interactive)**
-
+![newplot](https://github.com/user-attachments/assets/f3b12e6d-2ec2-494d-9186-d488b27a5906)
 
 
 ---
