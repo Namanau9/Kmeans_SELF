@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Means Clustering</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #4e54c8, #8f94fb);
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+        }
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        h3 {
+            font-size: 1.5rem;
+            margin-top: 20px;
+        }
+        img {
+            width: 70%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin-top: 10px;
+        }
+        iframe {
+            width: 80%;
+            max-width: 800px;
+            height: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin-top: 10px;
+            border: none;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            width: 90%;
+            max-width: 900px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+        <h2>K-Means Clustering on Iris Dataset</h2>
+        <h3>2D Scatter Plot</h3>
+        <img src="{{ url_for('static', filename='plot_2d.png') }}" alt="2D Cluster Plot">
+        
+        <h3>Interactive 3D Scatter Plot</h3>
+        <iframe src="{{ url_for('static', filename='plot_3d.html') }}"></iframe>
+    </div>
+</body>
+</html>
