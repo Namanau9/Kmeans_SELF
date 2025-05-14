@@ -31,60 +31,62 @@ This project is a Flask web application that performs **K-Means clustering** on 
 
 ---
 
-## Explanation
-###🔷 What is K-Means?
-K-Means is a popular unsupervised machine learning algorithm used for clustering data into groups based on similarity.
+## 📚 Key Concepts
 
-###🔹 How It Works:
-Choose the number of clusters k.
+### 🔷 What is K-Means?
 
-Randomly initialize k cluster centroids.
+**K-Means** is a popular **unsupervised machine learning algorithm** used to group data into clusters based on similarity.
 
-Assign each data point to the nearest centroid.
+#### 🔹 How It Works:
+1. Choose the number of clusters `k`.
+2. Randomly initialize `k` cluster centroids.
+3. Assign each data point to the nearest centroid.
+4. Recalculate centroids based on current cluster members.
+5. Repeat steps 3–4 until convergence.
 
-Recalculate centroids as the mean of all points assigned to that cluster.
+---
 
-Repeat steps 3–4 until centroids stop changing significantly (i.e., convergence).
+### 🔷 What is Clustering?
 
-###🔷 What is Clustering?
-Clustering is a technique used to group similar data points together without using any predefined labels.
+Clustering is a technique used to **group similar data points** without predefined labels.
 
-Real-life Examples:
-Grouping customers based on buying behavior.
+**Real-life examples:**
+- Grouping customers by purchase patterns
+- Image segmentation
+- Document categorization
 
-Image segmentation.
+---
 
-Document categorization.
+### 🔷 Iris Dataset
 
-###🔷 Iris Dataset
-A famous dataset used for classification and clustering tasks.
+A well-known dataset in machine learning, consisting of measurements for 150 iris flowers from 3 species.
 
-Features:
-Sepal length (cm)
+**Features:**
+- Sepal length (cm)
+- Sepal width (cm)
+- Petal length (cm)
+- Petal width (cm)
 
-Sepal width (cm)
+**Target Classes (for reference only):**
+- Setosa
+- Versicolor
+- Virginica
 
-Petal length (cm)
+---
 
-Petal width (cm)
+### 🔷 Standardization / Feature Scaling
 
-Target (for reference):
-Setosa
+We use `StandardScaler` to scale features by removing the mean and scaling to unit variance.  
+This is crucial for distance-based models like K-Means to ensure fair clustering.
 
-Versicolor
+---
 
-Virginica
+### 🔷 Data Visualization
 
-###🔷 Standardization / Feature Scaling
-The StandardScaler standardizes features by removing the mean and scaling to unit variance. It helps K-Means work better because clustering is distance-based (Euclidean), and scale matters.
+- 📊 **Matplotlib & Seaborn**: For static 2D scatter plots.
+- 🌐 **Plotly**: For dynamic and interactive 3D plots.
 
-
-###🔷 Data Visualization
-📊 matplotlib & seaborn:
-Used for static plots like 2D scatter plots.
-
-🌐 plotly:
-Used for interactive 3D plots.
+---
 
 
 ## 🖼️ Screenshots
