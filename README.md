@@ -31,6 +31,59 @@ This project is a Flask web application that performs **K-Means clustering** on 
 
 ---
 
+###🔷 What is K-Means?
+K-Means is a popular unsupervised machine learning algorithm used for clustering data into groups based on similarity.
+
+###🔹 How It Works:
+Choose the number of clusters k.
+
+Randomly initialize k cluster centroids.
+
+Assign each data point to the nearest centroid.
+
+Recalculate centroids as the mean of all points assigned to that cluster.
+
+Repeat steps 3–4 until centroids stop changing significantly (i.e., convergence).
+
+###🔷 What is Clustering?
+Clustering is a technique used to group similar data points together without using any predefined labels.
+
+Real-life Examples:
+Grouping customers based on buying behavior.
+
+Image segmentation.
+
+Document categorization.
+
+###🔷 Iris Dataset
+A famous dataset used for classification and clustering tasks.
+
+Features:
+Sepal length (cm)
+
+Sepal width (cm)
+
+Petal length (cm)
+
+Petal width (cm)
+
+Target (for reference):
+Setosa
+
+Versicolor
+
+Virginica
+
+###🔷 Standardization / Feature Scaling
+The StandardScaler standardizes features by removing the mean and scaling to unit variance. It helps K-Means work better because clustering is distance-based (Euclidean), and scale matters.
+
+
+###🔷 Data Visualization
+📊 matplotlib & seaborn:
+Used for static plots like 2D scatter plots.
+
+🌐 plotly:
+Used for interactive 3D plots.
 
 
 ## 🖼️ Screenshots
