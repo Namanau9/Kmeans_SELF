@@ -31,6 +31,7 @@ This project is a Flask web application that performs **K-Means clustering** on 
 
 ---
 
+## Explanation
 ###🔷 What is K-Means?
 K-Means is a popular unsupervised machine learning algorithm used for clustering data into groups based on similarity.
 
